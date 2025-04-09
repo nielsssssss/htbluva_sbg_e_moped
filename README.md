@@ -2,7 +2,7 @@
 
 In diesem Repository befindet sich der vollständige Quellcode zum HMI-System eines auf Elektroantrieb umgebauten Mopeds.  
 
-Das Projekt wurde im Rahmen des Informatikunterrichts der **4BHEL** an der **HTBLuVA Salzburg** im Schuljahr **2024/25** realisiert.  
+Das Projekt wurde im Rahmen des Informatikunterrichts der **4BHETs** an der **HTBLuVA Salzburg** im Schuljahr **2024/25** realisiert.  
 
 ## Projektbeschreibung
 
@@ -12,10 +12,10 @@ Der Raspberry Pi übernimmt die grafische Visualisierung über ein Webinterface 
 
 ## Inhalte des Repositories
 
-- Python-Skript zur CAN-Datenverarbeitung
-- Webinterface (HTML/CSS/JS) für die Anzeige auf dem Touchdisplay
-- Firmware für den RP2040 Feather
-- Dokumentation zur Systemarchitektur und Datenfluss
+- Python-Skript zur CAN-Datenverarbeitung  
+- Webinterface (HTML/CSS/JS) für die Anzeige auf dem Touchdisplay  
+- Firmware für den RP2040 Feather  
+- Dokumentation zur Systemarchitektur und Datenfluss  
 
 ## Team
 
@@ -23,3 +23,12 @@ Dieses Projekt wurde umgesetzt von:
 **Dominik Nachbar**  
 **Patrick Unger**  
 **Niels Steinböck**
+
+## Besonderer Dank
+
+Ein besonderer Dank gilt  
+Herrn Fachlehrer **Josef Diemling**,  
+Herrn Fachlehrer **Gehard Egger**,  
+**Professor Reinhold Benedikter**,  
+sowie **Professor Franz Reich** –  
+und der sehr kooperativen **Werkstättenausgabe** 😉.
