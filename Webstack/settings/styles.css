@@ -1,0 +1,196 @@
+body {
+    background-image: url('/img/settings/bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blue; 
+    opacity: 0.08;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#assist_text, #power_text, #design_text, #warnungen_text {
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    z-index: 4;
+    pointer-events: none;
+}
+
+#icon_assist, #icon_power, #icon_design, #icon_warnungen {
+    width: 80px;
+    height: 80px;
+    left: 35px;
+    pointer-events: none;
+}
+
+
+
+#box_assists {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(41, 41, 41);
+    box-sizing: border-box;
+    opacity: 0.5;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+
+#icon_assist {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 25px;
+    left: 25px;
+    z-index: 3;
+}
+
+#assist_text {
+    top: 110px;
+    left: 0;
+}
+
+#box_power {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(41, 41, 41);
+    box-sizing: border-box;
+    opacity: 0.5;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    z-index: 2;
+}
+
+#icon_power {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 150px;
+    left: 25px;
+    z-index: 3;
+}
+
+#power_text {
+    top: 260px;
+    left: 0;
+}
+
+#box_design {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(41, 41, 41);
+    box-sizing: border-box;
+    opacity: 0.5;
+    position: absolute;
+    left: 0px;
+    top: 300px;
+    z-index: 2;
+}
+
+#icon_design {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 300px;
+    left: 25px;
+    z-index: 3;
+}
+
+#design_text {
+    top: 410px;
+    left: 0;
+}
+
+#box_warnungen {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(41, 41, 41);
+    box-sizing: border-box;
+    opacity: 0.5;
+    position: absolute;
+    left: 0px;
+    top: 450px;
+    z-index: 2;
+}
+
+#icon_warnungen {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 450px;
+    left: 25px;
+    z-index: 3;
+}
+
+#warnungen_text {
+    top: 560px;
+    left: 0;
+}
+
+
+
+#box_assists:hover, #box_power:hover, #box_design:hover, #box_warnungen:hover {
+    background-color: rgb(0, 0, 80);
+    opacity: 0.8;
+    border: 2px solid  rgb(0,0,150);
+}
+
+#box_assists:hover ~ #icon_power, 
+#box_assists:hover ~ #icon_design, 
+#box_assists:hover ~ #icon_warnungen,
+#box_power:hover ~ #icon_assist, 
+#box_power:hover ~ #icon_design, 
+#box_power:hover ~ #icon_warnungen,
+#box_design:hover ~ #icon_assist, 
+#box_design:hover ~ #icon_power, 
+#box_design:hover ~ #icon_warnungen,
+#box_warnungen:hover ~ #icon_assist, 
+#box_warnungen:hover ~ #icon_power, 
+#box_warnungen:hover ~ #icon_design {
+    filter: brightness(0.4);
+}
+
+#box_assists:hover ~ #assist_text, 
+#box_power:hover ~ #power_text, 
+#box_design:hover ~ #design_text, 
+#box_warnungen:hover ~ #warnungen_text {
+    color: white;
+}
+
+#box_assists:hover ~ #power_text, 
+#box_assists:hover ~ #design_text, 
+#box_assists:hover ~ #warnungen_text,
+#box_power:hover ~ #assist_text, 
+#box_power:hover ~ #design_text, 
+#box_power:hover ~ #warnungen_text,
+#box_design:hover ~ #assist_text, 
+#box_design:hover ~ #power_text, 
+#box_design:hover ~ #warnungen_text,
+#box_warnungen:hover ~ #assist_text, 
+#box_warnungen:hover ~ #power_text, 
+#box_warnungen:hover ~ #design_text {
+    color: rgb(140, 140, 140);
+}
